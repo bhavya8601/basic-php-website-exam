@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 RUN apt-get update && \
-    apt-get install -y apache2 && \
+    apt-get install -y apache2 php && \
     rm /var/www/html/index.html  # Remove the default index.html
 
 COPY ./ /var/www/html/
