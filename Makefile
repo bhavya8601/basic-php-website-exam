@@ -8,7 +8,7 @@ run-local:
 	sudo systemctl enable apache2
 
 docker-run:
-	@docker run -it -d -p 8005:80 anupkrishna2000/myphpexam:v4
+	@docker run -it -d -p 8007:80 anupkrishna2000/myphpexam:v4
 
 docker-build:
 	echo "Anupom@1234" | docker login -u anupkrishna2000 --password-stdin
