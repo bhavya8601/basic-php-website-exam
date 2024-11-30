@@ -3,14 +3,14 @@ kind: Deployment
 metadata:
   name: my-website-deployment
 spec:
-  replicas: 3  # Number of replicas for redundancy and scaling
+  replicas: 1
   selector:
     matchLabels:
-      app: my-website-1
+      app: my-website
   template:
     metadata:
       labels:
-        app: my-website-1
+        app: my-website
     spec:
       containers:
       - name: my-website-container
