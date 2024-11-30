@@ -4,10 +4,10 @@ metadata:
   name: my-website-service
 spec:
   selector:
-    app: my-website  
+    app: my-website-1  
   ports:
     - protocol: TCP
       port: 80         
       targetPort: 80  
-      nodePort: 30090 
+      nodePort: 30091 
   type: NodePort 
