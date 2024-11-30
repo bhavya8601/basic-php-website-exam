@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-website-deployment
+spec:
+  replicas: 3  # Number of replicas for redundancy and scaling
+  selector:
+    matchLabels:
+      app: my-website
+  template:
+    metadata:
+      labels:
+        app: my-website
+    spec:
+      containers:
+      - name: my-website-container
+        image: bsajmera/myapp:7
+        ports:
+        - containerPort: 80 
