@@ -3,7 +3,6 @@ run-local:
 	sudo apt-get update -y
 	sudo apt-get install php apache2 -y
 	cd /var/www/html/ && \
-	sudo rm index.html && \
 	sudo cp -r ./* /var/www/html/ && \
 	sudo systemctl start apache2 && \
 	sudo systemctl enable apache2
