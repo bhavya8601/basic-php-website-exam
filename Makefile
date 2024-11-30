@@ -7,7 +7,7 @@ run-local:
 	sudo systemctl enable apache2
 
 docker-run:
-	docker rm -f $(docker ps -aq)
+	@docker rm -f $(docker ps -aq)
 	docker run -it -d -p 8005:80 anupkrishna2000/myphpexam:v2
 
 docker-build:
