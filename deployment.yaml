@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: my-website-container
-        image: anupkrishna2000/myphpexam:v1
+        image: anupkrishna2000/myphpexam:v2
         ports:
         - containerPort: 80 
